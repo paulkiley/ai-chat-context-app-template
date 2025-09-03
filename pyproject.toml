@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-chat-context-app"
+version = "0.1.0"
+description = "Example app consuming AI Chat Context Keeper framework"
+authors = [{ name = "Paul Kiley", email = "paulkiley@users.noreply.github.com" }]
+requires-python = ">=3.10"
+dependencies = [
+  "ai-chat-context-keeper @ git+https://github.com/paulkiley/ai-chat-context-keeper@main",
+]
+readme = "README.md"
+
+[project.scripts]
+aiapp = "ai_chat_context_app.main:main"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
