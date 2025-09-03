@@ -9,7 +9,7 @@ description = "Example app consuming AI Chat Context Keeper framework"
 authors = [{ name = "Paul Kiley", email = "paulkiley@users.noreply.github.com" }]
 requires-python = ">=3.10"
 dependencies = [
-  "ai-chat-context-keeper @ git+https://github.com/paulkiley/ai-chat-context-keeper@main",
+  "ai-chat-context-keeper @ git+https://github.com/paulkiley/ai-chat-context-keeper@v0.2.1",
 ]
 readme = "README.md"
 
@@ -19,4 +19,3 @@ aiapp = "ai_chat_context_app.main:main"
 [tool.ruff]
 line-length = 120
 target-version = "py310"
-
